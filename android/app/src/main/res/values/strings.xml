@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SilverBullet</string>
+    <string name="server_starting">Starting SilverBullet server…</string>
+    <string name="server_error">Failed to start server</string>
+</resources>

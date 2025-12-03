@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- 
+    Specify files to include or exclude from backup.
+    By default, all files in the app's data directory are backed up.
+    -->
+    <include domain="file" path="space/"/>
+</full-backup-content>

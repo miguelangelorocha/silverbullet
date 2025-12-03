@@ -42,3 +42,19 @@ generate:
 .PHONY: website
 website: build
 	SB_INDEX_PAGE=SilverBullet ./silverbullet -p 3001 website
+
+.PHONY: android-aar
+android-aar:
+	# Build the Go Mobile AAR library
+	./scripts/build_gomobile_aar.sh
+
+.PHONY: android
+android: android-aar
+	# Build the complete Android APK
+	./scripts/build_android.sh
+
+.PHONY: android-clean
+android-clean:
+	# Clean Android build artifacts
+	rm -rf android/app/libs/mobile.aar
+	cd android && ./gradlew clean

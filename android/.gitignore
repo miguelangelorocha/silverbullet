@@ -1,0 +1,39 @@
+# Android build files
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Generated AAR
+app/libs/mobile.aar
+
+# Gradle
+.gradle/
+build/
+
+# Android Studio
+*.iml
+.idea/
+.gradle/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore files (if you add signing)
+*.jks
+*.keystore
+
+# APK files
+*.apk
+*.ap_
+*.aab
+
+# Log files
+*.log

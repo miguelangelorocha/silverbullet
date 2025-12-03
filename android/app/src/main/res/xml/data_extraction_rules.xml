@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Specify files to include or exclude from cloud backup. -->
+        <include domain="file" path="space/"/>
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Specify files to include in device-to-device transfer -->
+        <include domain="file" path="space/"/>
+    </device-transfer>
+</data-extraction-rules>
