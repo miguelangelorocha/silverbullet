@@ -17,7 +17,7 @@ mkdir -p android/app/libs
 
 echo "Building Go Mobile AAR..."
 # Build the AAR file for Android
-gomobile bind -target=android -o android/app/libs/mobile.aar ./mobile
+gomobile bind -target=android -androidapi=21 -o android/app/libs/mobile.aar ./mobile
 
 echo "Building Deno client..."
 # Build the client bundle (required for embedded files)

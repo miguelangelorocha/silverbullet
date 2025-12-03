@@ -14,8 +14,8 @@ NC='\033[0m' # No Color
 
 # Configuration
 ANDROID_SDK_VERSION="11076708"
-ANDROID_PLATFORM="34"
-BUILD_TOOLS_VERSION="34.0.0"
+ANDROID_PLATFORM="21"
+BUILD_TOOLS_VERSION="28.0.3"
 NDK_VERSION="27.2.12479018"
 
 echo -e "${GREEN}Installing Android SDK for SilverBullet Android development${NC}"

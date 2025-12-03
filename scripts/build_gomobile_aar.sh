@@ -16,6 +16,6 @@ fi
 mkdir -p android/app/libs
 
 # Build the AAR file for Android
-gomobile bind -target=android -o android/app/libs/mobile.aar ./mobile
+gomobile bind -target=android -androidapi=21 -o android/app/libs/mobile.aar ./mobile
 
 echo "AAR build complete: android/app/libs/mobile.aar"
