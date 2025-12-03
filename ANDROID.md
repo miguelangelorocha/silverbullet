@@ -15,6 +15,22 @@ The SilverBullet Android app brings the full power of SilverBullet to your Andro
 - Android SDK with API level 24+ support
 - gomobile tool
 
+### Install Android SDK
+
+**Automated Installation** (Recommended):
+```bash
+./scripts/install_android_sdk.sh
+```
+
+This script will automatically install:
+- Android command-line tools
+- Android SDK Platform 34
+- Android Build Tools 34.0.0
+- Android NDK (for native compilation)
+- Configure environment variables
+
+**Manual Installation**: Use Android Studio or download command-line tools manually.
+
 ### Install gomobile
 
 ```bash
@@ -209,6 +225,12 @@ gomobile init
 
 ### ANDROID_HOME not set
 
+Run the installation script:
+```bash
+./scripts/install_android_sdk.sh
+```
+
+Or manually set the environment variable:
 ```bash
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools

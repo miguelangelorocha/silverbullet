@@ -36,6 +36,21 @@ The Android app embeds the full SilverBullet server and runs it locally on the d
    - Android SDK Platform 34
    - Android Build Tools 34.0.0
    - Android NDK (for native compilation)
+   
+   **Automated Installation:**
+   ```bash
+   # From the project root directory
+   ./scripts/install_android_sdk.sh
+   ```
+   
+   This script will:
+   - Download and install Android command-line tools
+   - Install required SDK components (Platform 34, Build Tools, NDK)
+   - Configure environment variables automatically
+   
+   **Manual Installation:**
+   - Download Android Studio or command-line tools
+   - Use SDK Manager to install the required components
 
 5. **Java Development Kit (JDK)** 17 or later
    ```bash
@@ -225,7 +240,12 @@ export PATH=$PATH:$GOPATH/bin
 
 ### Android SDK not found
 
-Set `ANDROID_HOME` environment variable:
+Run the installation script:
+```bash
+./scripts/install_android_sdk.sh
+```
+
+Or manually set `ANDROID_HOME` environment variable:
 ```bash
 export ANDROID_HOME=$HOME/Android/Sdk
 ```
